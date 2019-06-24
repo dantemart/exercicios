@@ -9,6 +9,7 @@
 import React from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import Simple from './src/components/simple'
+import ParImpar from './src/components/parimpar';
 
 
 const instructions = Platform.select({
@@ -25,7 +26,8 @@ export default class App extends React.Component {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-				<Simple label='Homem macaco' />
+				<Simple label='Label de teste' />
+				<ParImpar number={30}></ParImpar>
       </View>
     );
   }
